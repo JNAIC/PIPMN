@@ -8,12 +8,9 @@ import warnings
 from spafe.features import pncc,gfcc,bfcc,mfcc,lfcc,lpc,ngcc,rplp,psrcc,msrcc
 path = './UrbanSound8K'
 df = pd.read_csv(path+'/metadata/UrbanSound8K.csv')
-df.head()
-extracted = []
-zero_crossing_rate=[]
-# os.makedirs(os.path.abspath(path)+"/Numpy_5_gfcc_bfcc_mfcc_lfcc_ngcc")
-# for i in range(10):
-#     os.makedirs(os.path.abspath(path)+"/Numpy_5_gfcc_bfcc_mfcc_lfcc_ngcc/"+"fold"+str(i+1))
+os.makedirs(os.path.abspath(path)+"/Numpy_5_gfcc_bfcc_mfcc_lfcc_ngcc")
+for i in range(10):
+    os.makedirs(os.path.abspath(path)+"/Numpy_5_gfcc_bfcc_mfcc_lfcc_ngcc/"+"fold"+str(i+1))
 for index_num,row in tqdm(df.iterrows()):
     warnings.filterwarnings('ignore')
     file_name = os.path.join(os.path.abspath(path),'fold'+str(row["fold"])+'/',str(row['slice_file_name'])) 
