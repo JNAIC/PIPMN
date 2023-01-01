@@ -41,7 +41,7 @@ def train(data_path,random_state=42,epoches=3500,weight_decay=0.05,label_smoothi
     y = np.array(ext_df['class'].tolist())
     le = LabelEncoder()
     y = le.fit_transform(y)
-    y_all=np.eye[10](y)
+    y_all=np.eye(10)[y]
     x_train, x_test, y_train, y_test = train_test_split(np.array(x), y_all, test_size=0.1, random_state = random_state)
     print(x_train[0].shape)
     print("Number of training samples = ", x_train.shape[0])
