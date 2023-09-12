@@ -7,3 +7,5 @@
 
 
 # Upd:2023.3.17. Upload Comparison With Other Models
+
+# AI model is employed to polish up the thesis in the new one.
