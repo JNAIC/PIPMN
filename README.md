@@ -7,3 +7,5 @@
 
 
 # Upd:2023.3.17. Upload Comparison With Other Models
+
+[![Page Views Count](https://badges.toozhao.com/badges/01J9TFDJ9GRHECFH36WEEG8JY3/green.svg)](https://badges.toozhao.com/stats/01J9TFDJ9GRHECFH36WEEG8JY3 "Get your own page views count badge on badges.toozhao.com")
